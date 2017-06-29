@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(session({
     secret: config.sessionSecret,
     resave: false,
-    saveUninitialized: true
+    saveUninitialized: false
 }));
 
 app.use(checkForSession);
